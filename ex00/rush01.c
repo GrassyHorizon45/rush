@@ -6,7 +6,7 @@
 void  ft_putchar(char  c);
 void  ft_nonexistent(void);
 //w:width, l:left, m:middle, r:right. i is just a variable
-void  draw(int  w, char  l, char  m, char  r)
+void  ft_draw(int  w, char  l, char  m, char  r)
 {
   int i;
 
