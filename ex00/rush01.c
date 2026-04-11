@@ -43,4 +43,3 @@ void  rush(int x, int y)
   if (y > 1)
     ft_draw(x, '\\', '*', '/');
 }
-}
