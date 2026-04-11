@@ -11,11 +11,11 @@ void	ft_draw(int w, char l, char m, char r)
 {
 	int	i;
 
+	i = 0;
 	if
 	(w <= 0)
 	return ;
 	ft_putchar(l);
-	i = 0;
 	while (i < w - 2)
 	{
 		ft_putchar(m);
@@ -35,16 +35,17 @@ void	rush(int x, int y)
 	(x <= 0 || y <= 0)
 	{
 		ft_nonexistent();
-		return ;
-	}
-	ft_draw(x, '/', '*', '\\');
-	i = 2;
-	while (i < y)
-	{
-		ft_draw(x, '*', ' ', '*');
-		i++;
-	}
-	if
-	(y > 1)
-	ft_draw(x, '\\', '*', '/');
+	return ;
+}
+ft_draw(x, '/', '*', '\\');
+i = 2;
+while
+(i < y)
+{
+	ft_draw(x, '*', ' ', '*');
+i++;
+}
+if
+(y > 1)
+ft_draw(x, '\\', '*', '/');
 }
