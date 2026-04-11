@@ -9,7 +9,7 @@ void  ft_putchar(char  c)
 
 void ft_nonexistent(void)
 {
-  printf("Error: aha- we thought of that too :3")
+  write(1, "Error: aha- we thought of that too :3", 37)
 }
 
 
