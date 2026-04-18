@@ -12,9 +12,25 @@ void	ft_puterror(void)
 
 void	ft_print_table(int table[4][4])
 {
-	int	i;
-	int	j;
+	int	width;
+	int	height;
+	int	ans;
 
-	i = 0;
-	while (i < 4)
+	width = 0;
+	while (width < 4)
 	{
+		ft_putchar(&ans);
+		ft_putchar(" ");
+		width++;
+		if (width == 4)
+		{
+			ft_putchar("\n");
+			ft_putchar(&ans);
+			height++;
+			width = 0;
+		}
+		if (height == 4)
+			break ;
+	}
+	return (0);
+}
