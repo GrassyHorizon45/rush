@@ -10,11 +10,10 @@ void	ft_puterror(void)
 	ft_putchar("Error\n");
 }
 
-void	ft_print_table(int table[4][4])
+void	ft_print_table(int table[4][4], int ans)
 {
 	int	width;
 	int	height;
-	int	ans;
 
 	width = 0;
 	while (width < 4)
