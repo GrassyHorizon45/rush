@@ -10,25 +10,24 @@ void	ft_puterror(void)
 	ft_putchar("Error\n");
 }
 
-void	ft_print_table(int table[4][4], int ans)
+void	ft_print_table(int table[x][y], int ans)
 {
 	int	width;
 	int	height;
 
 	width = 0;
-	while (width < 4)
+	while (width < x)
 	{
 		ft_putchar(&ans);
 		ft_putchar(" ");
 		width++;
-		if (width == 4)
+		if (width == x)
 		{
 			ft_putchar("\n");
-			ft_putchar(&ans);
 			height++;
 			width = 0;
 		}
-		if (height == 4)
+		if (height == y)
 			break ;
 	}
 	return (0);
